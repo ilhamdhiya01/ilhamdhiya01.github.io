@@ -55,4 +55,34 @@ export const allSong = [
     img: img7,
     singer: 'Deny Caknan',
   },
+  {
+    name: 'Kembang Wang',
+    path: music3,
+    img: img3,
+    singer: 'Happy Asmara',
+  },
+  {
+    name: 'Kelanga',
+    path: music4,
+    img: img4,
+    singer: 'Guyon Waton',
+  },
+  {
+    name: 'Cerito Mustahi',
+    path: music5,
+    img: img5,
+    singer: 'Deny Caknan',
+  },
+  {
+    name: 'Pisa',
+    path: music6,
+    img: img6,
+    singer: 'Guyon Waton',
+  },
+  {
+    name: 'Sane',
+    path: music7,
+    img: img7,
+    singer: 'Deny Caknan',
+  },
 ];

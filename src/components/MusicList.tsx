@@ -7,7 +7,7 @@ import { AnimateSound } from './AnimateSound';
 export const MusicList = () => {
   const { indexNo, showListMusic, playSong, setPlayMusicFromList } = useMusicPlayer();
   return (
-    <div className={`fixed ${showListMusic ? 'h-[100vh] lg:h-[80vh] md:h-[80vh]' : 'h-0'} overflow-y-auto disbaled-scroll-bar flex justify-center w-full lg:w-[80%] md:w-[80%] bottom-0 lg:bottom-[10vh] lg:rounded-lg md:rounded-lg bg-white z-[1] opacity-[0.9] transition-all duration-300 ease-in-out`}>
+    <div className={`absolute ${showListMusic ? 'h-[100vh] lg:h-[80vh] md:h-[80vh]' : 'h-0'} overflow-y-auto disbaled-scroll-bar flex justify-center w-full lg:w-[80%] md:w-[80%] bottom-0 lg:bottom-[10vh] lg:rounded-lg md:rounded-lg bg-white z-[1] opacity-[0.9] transition-all duration-300 ease-in-out`}>
       <ul className='w-full flex flex-col gap-4 p-8'>
         {allSong.map((item, i) => (
           <li key={item.name} onClick={() => setPlayMusicFromList(i)} className={`${playSong && i === indexNo && 'bg-[#232427]'} flex justify-between items-center shadow-[rgba(0,_0,_0,_0.16)_0px_1px_4px] rounded-lg px-3 py-3 hover:bg-[#232427] cursor-pointer group transition-all ease-in-out duration-300`}>
